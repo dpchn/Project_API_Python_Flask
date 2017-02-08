@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<body>
+		<table border=1 align='center'>
+			
+				<th>ID</th>
+				<th>Name</th>
+				<th>Contact</th>
+				<th>Email</th>
+			
+			{% for row in rows%}
+				<tr>
+					<td>{{row["ID"]}}</td>
+					<td>{{row["Name"]}}</td>
+					<td>{{row["Contact"]}}</td>
+					<td>{{row["Email"]}}</td>
+				</tr>
+			{% endfor %}
+		</table>
+		<a href='/'>Go to Home Page</a>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+	<body>
+		<form action = "{{url_for( 'addrecord' )}}" method = 'POST' align = 'center' >
+			<h1 align='center'>Add New Entries</h1>
+			<br>
+			 Name<br>
+			 <input type = 'text' name = "name" />
+			 <br>
+			 Mobile No.<br>
+			 <input type = 'text' name = "contact" />
+			 <br>
+			 Email<br>
+			 <input type = 'type' name= 'email'/>
+
+			 <br>
+			 <input type= 'submit' value = "Submit"/>
+		</form>
+		
+		<br>
+		<table >
+			<tr>
+				<form action = "/del" method = 'POST' align = 'center' >
+					 <input type= 'submit' value = "Delete"/>
+				</form>
+			</tr>
+
+			<tr>
+				<form action = "{{url_for( 'add_id' )}}" method = 'POST' align = 'center' >
+					<input type= 'submit' value = "Update"/>
+				</form>
+			</tr>
+
+			<tr>
+				<form action = "{{url_for( 'list' )}}" method = 'POST' align = 'center' >
+					<input type= 'submit' value = "Show Data"/>
+				</form>
+			</tr>
+		</table>
+
+	</body>
+</html>
